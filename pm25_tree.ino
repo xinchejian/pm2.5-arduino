@@ -51,7 +51,7 @@ void setup() {
 void loop() {
   duration = pulseIn(pin, LOW);
   lowpulseoccupancy = lowpulseoccupancy+duration;
-  if ((millis()-starttime) > sampletime_ms)//if the sampel time == 30s
+  if ((millis()-starttime) > sampletime_ms)  //if the sample time == 30s
   {
 
     total= total - readings[index];         
